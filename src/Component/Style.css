@@ -1,0 +1,213 @@
+
+/* Midnight Slate Theme */
+
+
+body {
+    background-color: #F1F5F9;
+    color: #1E293B;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    line-height: 1.6;
+}
+
+.dashboard-heading {
+    padding: 40px 15px 28px;
+}
+
+.dashboard-heading h1 {
+    font-size: clamp(1.6rem, 3vw, 2rem);
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: #1E293B;
+    margin-bottom: 10px;
+}
+
+.dashboard-heading p {
+    font-size: 1.05rem;
+    color: #64748B;
+    margin-bottom: 0;
+}
+
+
+/* Dashboard Cards */
+
+.card {
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(30, 41, 59, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 22px rgba(30, 41, 59, 0.10);
+}
+
+.card-body {
+    padding: 24px;
+}
+
+
+
+.card h3,
+.card h4 {
+    color: #1E293B;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+}
+
+.card h3 {
+    font-size: 1.35rem;
+    margin-bottom: 12px;
+}
+
+.card h4 {
+    font-size: 1.1rem;
+    margin-top: 18px;
+    margin-bottom: 12px;
+}
+
+
+/* Progress Bar */
+
+.card .progress {
+    height: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 12px 0;
+    background-color: #E2E8F0;
+}
+
+.card .progress-bar {
+    background-color: #64748B !important;
+    border-radius: 10px;
+    transition: width 0.4s ease;
+}
+
+
+/* Buttons */
+
+button {
+    background-color: #475569;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    padding: 9px 16px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease,
+                transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #334155;
+    transform: translateY(-1px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+button:focus-visible {
+    outline: 3px solid #CBD5E1;
+    outline-offset: 2px;
+}
+
+
+/* Input Fields */
+
+input[type="text"] {
+    width: 100%;
+    border: 1px solid #CBD5E1;
+    border-radius: 10px;
+    padding: 10px 12px;
+    font-size: 0.95rem;
+    color: #1E293B;
+    background-color: #FFFFFF;
+    outline: none;
+    transition: border-color 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #64748B;
+    box-shadow: 0 0 0 3px rgba(100, 116, 139, 0.15);
+}
+
+input[type="text"]::placeholder {
+    color: #94A3B8;
+}
+
+
+/* Main Task Form Spacing */
+.container.my-3 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+}
+
+.container.my-3 input[type="text"] {
+    flex: 1;
+    min-width: 200px;
+}
+
+/* Learning Cards Layout */
+section .row {
+    row-gap: 24px;
+}
+
+.search-box {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 10px auto 20px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 10px 14px 10px 42px;
+    border: 1px solid #CBD5E1;
+    border-radius: 10px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.search-box .search-icon {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #64748B;
+    pointer-events: none;
+}
+
+/* SkillTrack header */
+h1.text-center {
+    font-size: 2rem;
+    font-weight: 750;
+    letter-spacing: -0.5px;
+    color: #1E293B;
+    margin-bottom: 8px;
+}
+
+p.text-center {
+    font-size: 1rem;
+    color: #64748B;
+    margin-bottom: 0;
+}
+
+/* Dashboard summary cards */
+.container.mb-4 .row.g-3 > div h2 {
+    font-size: 2rem;
+    font-weight: 750;
+    color: #334155;
+    margin-bottom: 0;
+}
+
+.container.mb-4 .row.g-3 > div h5 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #64748B;
+}
